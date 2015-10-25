@@ -26,6 +26,6 @@ int main(int argc, char **argv) {
     }
 
     destroyBoard(&gameBoard);
-    
+
     return 0;
 }

@@ -71,11 +71,21 @@ void printBoard(board *gameBoard) {
     printf("\n");
 }
 
-int wrapCoord(int val, int max) {
+/*int wrapCoord(int val, int max) {
     if (val < 0) {
         return (max + val) % max;
     }
 
     return val % max;
+}*/
+
+int wrapCoord(int val, int max) {
+    /*if (val < 0) {
+        return (max + val) % max;
+    }
+
+    return val % max;*/
+
+    return val < 0 ? ((max + val) % max) : (val % max);
 }
 
